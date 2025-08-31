@@ -5,6 +5,21 @@
 		"factoryName": {
 			"value": "ras-adf"
 		},
+		"LS_AzureBlobStorage_connectionString": {
+			"value": ""
+		},
+		"LS_AzureSqlDatabase_rashik_password": {
+			"value": ""
+		},
+		"LS_AzureSqlDatabase_rashik_properties_typeProperties_server": {
+			"value": "rashik.database.windows.net"
+		},
+		"LS_AzureSqlDatabase_rashik_properties_typeProperties_database": {
+			"value": "void_db"
+		},
+		"LS_AzureSqlDatabase_rashik_properties_typeProperties_userName": {
+			"value": "c3504622"
+		},
 		"containerUri": {
 			"value": ""
 		},

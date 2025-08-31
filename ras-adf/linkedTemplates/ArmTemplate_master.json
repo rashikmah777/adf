@@ -7,6 +7,26 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "ras-adf"
 		},
+		"LS_AzureBlobStorage_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'LS_AzureBlobStorage'"
+		},
+		"LS_AzureSqlDatabase_rashik_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_AzureSqlDatabase_rashik'"
+		},
+		"LS_AzureSqlDatabase_rashik_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "rashik.database.windows.net"
+		},
+		"LS_AzureSqlDatabase_rashik_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "void_db"
+		},
+		"LS_AzureSqlDatabase_rashik_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "c3504622"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -33,6 +53,21 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"LS_AzureBlobStorage_connectionString": {
+						"value": "[parameters('LS_AzureBlobStorage_connectionString')]"
+					},
+					"LS_AzureSqlDatabase_rashik_password": {
+						"value": "[parameters('LS_AzureSqlDatabase_rashik_password')]"
+					},
+					"LS_AzureSqlDatabase_rashik_properties_typeProperties_server": {
+						"value": "[parameters('LS_AzureSqlDatabase_rashik_properties_typeProperties_server')]"
+					},
+					"LS_AzureSqlDatabase_rashik_properties_typeProperties_database": {
+						"value": "[parameters('LS_AzureSqlDatabase_rashik_properties_typeProperties_database')]"
+					},
+					"LS_AzureSqlDatabase_rashik_properties_typeProperties_userName": {
+						"value": "[parameters('LS_AzureSqlDatabase_rashik_properties_typeProperties_userName')]"
 					}
 				}
 			},
